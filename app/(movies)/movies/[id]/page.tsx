@@ -2,18 +2,18 @@ import { Suspense } from 'react';
 import MovieInfo, { getMovie } from '../../../../components/movie-info';
 import MovieVideos from '../../../../components/movie-videos';
 
-type PageProps = {
-  params: { id: string };
-};
-
-export async function generateMetadata({ params }: PageProps) {
+export async function generateMetadata({ params }: { params: { id: string } }) {
   const movie = await getMovie(params.id);
   return {
     title: movie.title,
   };
 }
 
-export default async function MovieDetailPage({ params }: PageProps) {
+export default async function MovieDetailPage({
+  params,
+}: {
+  params: { id: string };
+}) {
   return (
     <div>
       <Suspense fallback={<h1>Loading movie info</h1>}>
