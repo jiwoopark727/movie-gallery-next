@@ -1,4 +1,4 @@
-import styles from '../../styles/about-us.module.css';
+import styles from '../../styles/home-layout.module.css';
 
 export default function AboutUsLayout({
   children,

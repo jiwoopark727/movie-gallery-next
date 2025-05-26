@@ -1,0 +1,21 @@
+.pageWrapper {
+  min-height: 88vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContent {
+  flex: 1;
+}
+
+.mainContainer {
+  justify-content: center;
+  line-height: 50px;
+}
+
+.container {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

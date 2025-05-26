@@ -1,1 +1,1 @@
-export const API_URL = 'https://example.com/api';
+export const API_URL = 'https://nomad-movies.nomadcoders.workers.dev/movies';
