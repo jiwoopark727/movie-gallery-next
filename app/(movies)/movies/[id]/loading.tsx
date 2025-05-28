@@ -1,3 +1,5 @@
+import styles from '../../../../styles/movie-info.module.css';
+
 export default function Loading() {
-  return <h2>Loading a movie :id</h2>;
+  return <span className={styles.loader}></span>;
 }

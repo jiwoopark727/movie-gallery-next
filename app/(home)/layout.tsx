@@ -8,7 +8,7 @@ export default function AboutUsLayout({
   return (
     <div className={styles.pageWrapper}>
       <main className={styles.mainContent}>{children}</main>
-      <footer className={styles.container}>
+      <footer className={styles.footer}>
         &copy; 2025. Jiwoo Park. All rights reserved.
       </footer>
     </div>

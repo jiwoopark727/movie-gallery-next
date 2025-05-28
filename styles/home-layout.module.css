@@ -1,16 +1,17 @@
 .pageWrapper {
-  min-height: 88vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 .mainContent {
-  margin-bottom: 100px;
+  flex: 1;
 }
 
-.container {
-  padding: 40px 0;
+.footer {
+  padding: 200px 0px 50px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: static;
 }

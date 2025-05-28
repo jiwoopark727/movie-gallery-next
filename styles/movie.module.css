@@ -3,24 +3,39 @@
   grid-template-rows: 1fr auto;
   gap: 20px;
   cursor: pointer;
+  padding: 18px 15px;
   place-items: center;
+  border: 1px solid rgb(220, 220, 220);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 20px;
 }
 
 .movie img {
-  max-width: 100%;
-  min-height: 100%;
+  max-width: 94%;
+  min-height: 94%;
   border-radius: 10px;
-  transition: opacity 0.3s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
-.movie img {
-  opacity: 0.7;
+.movie {
+  scale: 1;
 }
 
-.movie img:hover {
-  opacity: 1;
+.movie:hover {
+  scale: 0.98;
 }
 
 .movie a {
   text-align: center;
+}
+
+.movie Link {
+  font-size: 2px;
+}
+
+.movie p {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  padding: 0px 15px;
 }

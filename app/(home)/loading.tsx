@@ -1,3 +1,5 @@
+import styles from '../../styles/home.module.css';
+
 export default function Loading() {
-  return <h2>Loading...</h2>;
+  return <span className={styles.loader}></span>;
 }
