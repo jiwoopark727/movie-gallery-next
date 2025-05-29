@@ -3,7 +3,7 @@
   grid-template-rows: 1fr auto;
   gap: 20px;
   cursor: pointer;
-  padding: 18px 15px;
+  padding: 12px 10px;
   place-items: center;
   border: 1px solid rgb(220, 220, 220);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;

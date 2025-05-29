@@ -1,6 +1,7 @@
 import { Suspense } from 'react';
 import MovieInfo, { getMovie } from '../../../../components/movie-info';
 import MovieVideos from '../../../../components/movie-videos';
+import styles from '../../../../styles/movie-info.module.css';
 
 type IParams = Promise<{
   id: string;
@@ -19,10 +20,10 @@ export default async function MovieDetailPage(props: { params: IParams }) {
   const id = params.id;
   return (
     <div>
-      <Suspense fallback={<h1>Loading movie info</h1>}>
+      <Suspense fallback={<span className={styles.loader}></span>}>
         <MovieInfo id={id} />
       </Suspense>
-      <Suspense fallback={<h1>Loading movie videos</h1>}>
+      <Suspense fallback={<span className={styles.loader}></span>}>
         <MovieVideos id={id} />
       </Suspense>
     </div>
