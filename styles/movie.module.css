@@ -1,41 +1,41 @@
-.movie {
+.movie_container {
   display: grid;
   grid-template-rows: 1fr auto;
   gap: 20px;
   cursor: pointer;
-  padding: 12px 10px;
-  place-items: center;
   border: 1px solid rgb(220, 220, 220);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 20px;
 }
 
-.movie img {
-  max-width: 94%;
-  min-height: 94%;
+.img_box {
+  padding: 15px 15px 0px 15px;
+  border-radius: 10px;
+}
+
+.img_box img {
+  max-width: 100%;
+  max-height: 100%;
   border-radius: 10px;
   transition: 0.1s ease-in-out;
 }
 
-.movie {
+.movie_container {
   scale: 1;
 }
 
-.movie:hover {
+.movie_container:hover {
   scale: 0.98;
 }
 
-.movie a {
-  text-align: center;
-}
-
-.movie Link {
+.movie_container Link {
   font-size: 2px;
 }
 
-.movie p {
-  font-size: 16px;
+.movie_container p {
+  font-size: 18px;
   font-weight: 600;
   text-align: left;
-  padding: 0px 15px;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }

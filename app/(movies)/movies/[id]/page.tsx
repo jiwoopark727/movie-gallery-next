@@ -23,9 +23,9 @@ export default async function MovieDetailPage(props: { params: IParams }) {
       <Suspense fallback={<span className={styles.loader}></span>}>
         <MovieInfo id={id} />
       </Suspense>
-      <Suspense fallback={<span className={styles.loader}></span>}>
+      {/* <Suspense fallback={<span className={styles.loader}></span>}>
         <MovieVideos id={id} />
-      </Suspense>
+      </Suspense> */}
     </div>
   );
 }

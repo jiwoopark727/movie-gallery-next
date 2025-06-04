@@ -16,8 +16,10 @@ export default function Movie({ title, id, poster_path }: IMovieProps) {
     router.push(`/movies/${id}`);
   };
   return (
-    <div key={id} className={styles.movie} onClick={onClick}>
-      <img src={poster_path} alt={title} />
+    <div key={id} className={styles.movie_container} onClick={onClick}>
+      <div className={styles.img_box}>
+        <img src={poster_path} alt={title} />
+      </div>
       <p>{title}</p>
     </div>
   );

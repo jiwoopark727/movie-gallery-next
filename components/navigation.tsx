@@ -13,11 +13,11 @@ export default function Navigation() {
         <span>Movie Gallery</span>
         <li>
           <Link href='/'>Home</Link>
-          {path === '/' ? '🚗' : ''}
+          {path === '/' ? '👈' : ''}
         </li>
         <li>
           <Link href='/about-us'>About Us</Link>
-          {path === '/about-us' ? '🚗' : ''}
+          {path === '/about-us' ? '👈' : ''}
         </li>
       </ul>
     </nav>
