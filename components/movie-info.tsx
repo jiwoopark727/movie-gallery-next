@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { API_URL } from '../app/constants';
 import styles from '../styles/movie-info.module.css';
 
@@ -17,7 +18,7 @@ export default async function MovieInfo({ id }: { id: string }) {
         <img src={movie.poster_path} alt='' className={styles.poster} />
         <div className={styles.info}>
           <h1 className={styles.title2}>{movie.title}</h1>
-          <h3>⭐ {movie.vote_average.toFixed(1)} / 10</h3>
+          <h3>⭐ {movie.vote_average.toFixed(1)}/10</h3>
           <h3>📆 {movie.release_date}</h3>
           <h3>⏰ {movie.runtime}minutes</h3>
           <p>{movie.overview}</p>
@@ -28,13 +29,12 @@ export default async function MovieInfo({ id }: { id: string }) {
               </a>
             </button>
             <button className={styles.styled_button}>
-              <a href={movie.homepage} target='_blank'>
-                Credits 🔗
-              </a>
+              <Link href={`/movies/${id}/credits`}>Credits 🔗</Link>
             </button>
           </div>
         </div>
       </div>
+      <div className={styles.sub_title}>Related Videos</div>
     </div>
   );
 }

@@ -1,6 +1,6 @@
-import styles from '../../styles/about-us.module.css';
+import styles from '../../../../styles/about-us.module.css';
 
-export default function HomeLayout({
+export default function MovieDetailLayout({
   children,
 }: {
   children: React.ReactNode;

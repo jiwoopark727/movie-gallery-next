@@ -1,8 +1,9 @@
 .container {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  width: 62%;
+  max-width: 60%;
+  grid-template-columns: 1fr 1.7fr;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .poster {
@@ -12,17 +13,17 @@
 }
 
 .title1 {
-  max-width: 75%;
+  max-width: 80%;
   margin: auto;
   margin-bottom: 30px;
-  font-size: 36px;
+  font-size: 50px;
   font-weight: 600;
 }
 
 .sub_title {
-  max-width: 75%;
+  max-width: 80%;
   margin: auto;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-size: 30px;
   font-weight: 600;
   padding-bottom: 10px;
@@ -56,7 +57,7 @@ qkrwl .title2 {
 
 .styled_button {
   background-color: white;
-  border: 1px solid gray;
+  border: 1px solid rgb(224, 224, 224);
   border-radius: 4px;
   padding: 8px 12px;
   margin-right: 10px;
