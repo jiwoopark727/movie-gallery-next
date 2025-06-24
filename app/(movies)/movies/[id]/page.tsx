@@ -18,6 +18,7 @@ export async function generateMetadata(props: { params: IParams }) {
 export default async function MovieDetailPage(props: { params: IParams }) {
   const params = await props.params;
   const id = params.id;
+  // console.log(id);
   return (
     <div>
       <Suspense fallback={<span className={styles.loader}></span>}>

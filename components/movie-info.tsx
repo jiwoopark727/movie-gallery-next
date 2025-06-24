@@ -9,7 +9,7 @@ export async function getMovie(id: string) {
 
 export default async function MovieInfo({ id }: { id: string }) {
   const movie = await getMovie(id);
-  console.log(movie);
+  // console.log(movie);
   return (
     <div>
       <div className={styles.title1}>{movie.title}</div>
