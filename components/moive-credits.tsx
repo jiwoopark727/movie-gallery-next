@@ -13,18 +13,25 @@ export async function getMovie(id: string) {
 
 export default async function MovieInfo({ id }: { id: string }) {
   const credits = await getCredits(id);
-  // console.log(movie_credit);
+  const movie = await getMovie(id);
+  console.log(credits);
   return (
     <div>
-      {credits.map((credit) => (
-        <div>
-          <img src={credit.profile_path} alt='' className={styles.profileImg} />
-          <p>{credit.name}</p>
-          <p>{credit.character}</p>
-          <p>⭐{credit.popularity}</p>
-        </div>
-      ))}
-      아니 왜 안뜸?
+      <div className={styles.title}>{movie.title}</div>
+      <div className={styles.wrapper}>
+        {credits.map((credit) => (
+          <div key={credit.id} className={styles.container}>
+            <img
+              src={credit.profile_path}
+              alt=''
+              className={styles.profileImg}
+            />
+            <p className={styles.name}>{credit.name}</p>
+            <p className={styles.c_name}>{credit.character}</p>
+            <p className={styles.popular}>⭐ {credit.popularity}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
